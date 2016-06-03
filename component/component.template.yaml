@@ -1,0 +1,50 @@
+%YAML 1.2
+---
+version: {VERSION}
+name: Vibrate Plugin
+id: VibratePlugin
+publisher: James Montemagno
+license: License.md
+skip_docs: true
+icons: 
+  - BatteryPlugin_128x128.png
+  - BatteryPlugin_512x512.png
+publisher-url: http://www.github.com/jamesmontemagno/BatteryPlugin
+is_shell: true
+packages:
+  ios: Xam.Plugin.Battery, Version={VERSION}
+  ios-unified: Xam.Plugin.Battery, Version={VERSION}
+  android: Xam.Plugin.Battery, Version={VERSION}
+  winphone-8.0: Xam.Plugin.Battery, Version={VERSION}
+  winphone-8.1: Xam.Plugin.Battery, Version={VERSION}
+  winuniversal-10.0: Xam.Plugin.Battery, Version={VERSION}
+summary: Easily access the battery features of any device.
+details: Details.md
+getting-started: GettingStarted.md
+samples: 
+  - name: Battery Samples (iOS, Android, and Windows)
+    path: "../samples/BatterySample.sln"
+    removeProjects: 
+      - Plugin.Battery
+      - Plugin.Battery.Abstractions
+      - Plugin.Battery.Android
+      - Plugin.Battery.iOSUnified
+      - Plugin.Battery.WinPhone
+    installNuGets:
+      - project: BatterySample
+        packages: 
+          - Xam.Plugin.Battery
+      - project: BatterySample.iOS
+        packages: 
+          - Xam.Plugin.Battery
+      - project: BatterySample.Droid
+        packages: 
+          - Xam.Plugin.Battery
+      - project: BatterySample.WinPhone
+        packages: 
+          - Xam.Plugin.Battery
+    no_build: true
+    skip_docs: true  
+local-nuget-repo: ../Build/nuget
+no_build: true
+...
