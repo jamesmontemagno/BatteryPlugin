@@ -25,11 +25,11 @@ samples:
   - name: Battery Samples (iOS, Android, and Windows)
     path: "../samples/BatterySample.sln"
     removeProjects: 
-      - Plugin.Battery
-      - Plugin.Battery.Abstractions
-      - Plugin.Battery.Android
-      - Plugin.Battery.iOSUnified
-      - Plugin.Battery.WinPhone
+      - Battery.Plugin
+      - Battery.Plugin.Abstractions
+      - Battery.Plugin.Android
+      - Battery.Plugin.iOSUnified
+      - Battery.Plugin.WinPhone
     installNuGets:
       - project: BatterySample
         packages: 
