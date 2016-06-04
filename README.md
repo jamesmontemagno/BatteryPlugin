@@ -1,4 +1,4 @@
-## ![](Common/battery_icon.png) Battery Status Plugin for Xamarin and Windows
+Battery Status Plugin for Xamarin and Windows
 
 Simple cross platform plugin to check batterystatus of mobile device, get remaining percentage, 
 
@@ -6,7 +6,7 @@ Simple cross platform plugin to check batterystatus of mobile device, get remain
 * Available on NuGet: http://www.nuget.org/packages/Xam.Plugin.Battery  [![NuGet](https://img.shields.io/nuget/v/Xam.Plugin.Battery.svg?label=NuGet)](https://www.nuget.org/packages/Xam.Plugin.Battery/)
 * Install into your PCL project and Client projects.
 
-Build Status: [![Build status](https://ci.appveyor.com/api/projects/status/78bt2sgh90x3kw5n?svg=true)](https://ci.appveyor.com/project/JamesMontemagno/xamarin-plugins-5759s)
+Build Status: [![Build status](https://ci.appveyor.com/api/projects/status/k7cjo91oamdxt8bd?svg=true)](https://ci.appveyor.com/project/JamesMontemagno/batteryplugin)
 
 **Platform Support**
 
@@ -108,12 +108,5 @@ event BatteryChangedEventHandler BatteryChanged;
 
 Note: on WP you will only receive this on battery level change.
 
-#### Contributors
-* [jamesmontemagno](https://github.com/jamesmontemagno)
-
-Thanks!
-
-#### License
-Licensed under main repo license
 
 
