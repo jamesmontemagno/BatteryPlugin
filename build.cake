@@ -74,7 +74,7 @@ Task ("NuGet")
     if(!DirectoryExists("./Build/nuget/"))
         CreateDirectory("./Build/nuget");
         
-	NuGetPack ("./Plugin.nuspec", new NuGetPackSettings { 
+	NuGetPack ("./nuget/Plugin.nuspec", new NuGetPackSettings { 
 		Version = version,
 		Verbosity = NuGetVerbosity.Detailed,
 		OutputDirectory = "./Build/nuget/",
