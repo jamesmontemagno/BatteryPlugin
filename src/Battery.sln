@@ -22,10 +22,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8D9C0923-9208-4EFB-8C99-43223274E183}"
 	ProjectSection(SolutionItems) = preProject
 		..\appveyor.yml = ..\appveyor.yml
-		..\ci\build.cake = ..\ci\build.cake
+		..\build.cake = ..\build.cake
 		..\component\component.template.yaml = ..\component\component.template.yaml
 		..\LICENSE = ..\LICENSE
-		..\ci\Plugin.nuspec = ..\ci\Plugin.nuspec
+		..\nuget\Plugin.nuspec = ..\nuget\Plugin.nuspec
 		..\README.md = ..\README.md
 	EndProjectSection
 EndProject
