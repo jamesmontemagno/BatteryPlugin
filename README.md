@@ -6,7 +6,9 @@ Simple cross platform plugin to check batterystatus of mobile device, get remain
 * Available on NuGet: http://www.nuget.org/packages/Xam.Plugin.Battery  [![NuGet](https://img.shields.io/nuget/v/Xam.Plugin.Battery.svg?label=NuGet)](https://www.nuget.org/packages/Xam.Plugin.Battery/)
 * Install into your PCL project and Client projects.
 
-Build Status: [![Build status](https://ci.appveyor.com/api/projects/status/k7cjo91oamdxt8bd?svg=true)](https://ci.appveyor.com/project/JamesMontemagno/batteryplugin)
+Build Status: 
+* [![Build status](https://ci.appveyor.com/api/projects/status/k7cjo91oamdxt8bd?svg=true)](https://ci.appveyor.com/project/JamesMontemagno/batteryplugin)
+* CI NuGet Feed: https://ci.appveyor.com/nuget/batteryplugin
 
 **Platform Support**
 
