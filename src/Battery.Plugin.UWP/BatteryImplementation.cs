@@ -89,7 +89,7 @@ namespace Plugin.Battery
 
                 var percentage = RemainingChargePercent;
 
-                if (percentage >= 1.0)
+                if (percentage >= 100)
                     status = BatteryStatus.Full;
                 else if (percentage < 0)
                     status = BatteryStatus.Unknown;
@@ -122,7 +122,8 @@ namespace Plugin.Battery
         {
             get
             {
-                if (status == BatteryStatus.Full || status == BatteryStatus.Charging)
+                var currentStatus = Status;
+                if (currentStatus == BatteryStatus.Full || currentStatus == BatteryStatus.Charging)
                     return Abstractions.PowerSource.Ac;
 
                 return Abstractions.PowerSource.Battery;
