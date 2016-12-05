@@ -1,14 +1,6 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
 using Android.Content;
 using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using Plugin.Battery.Abstractions;
 using BatteryStatus = Android.OS.BatteryStatus;
 
@@ -121,9 +113,9 @@ namespace Plugin.Battery
                 try
                 {
                     //check if we have changed at all
-                    if(LastChangedArgs != null)
+                    if (LastChangedArgs != null)
                     {
-                        if(args.IsLow == LastChangedArgs.IsLow &&
+                        if (args.IsLow == LastChangedArgs.IsLow &&
                             args.PowerSource == LastChangedArgs.PowerSource &&
                             args.RemainingChargePercent == LastChangedArgs.RemainingChargePercent &&
                             args.Status == LastChangedArgs.Status)

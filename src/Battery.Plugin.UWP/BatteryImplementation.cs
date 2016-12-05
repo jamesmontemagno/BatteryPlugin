@@ -22,15 +22,15 @@ namespace Plugin.Battery
 
         async void RemainingChargePercentChanged(object sender, object e)
         {
-            
+
             var dispatcher = CoreApplication.MainView.CoreWindow.Dispatcher;
-           
+
 
             if (dispatcher != null)
             {
                 await dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
                 {
-                    
+
                     OnBatteryChanged(new BatteryChangedEventArgs
                     {
 
@@ -53,7 +53,7 @@ namespace Plugin.Battery
             }
 
         }
-        
+
         private Windows.Devices.Power.Battery DefaultBattery
         {
             get { return Windows.Devices.Power.Battery.AggregateBattery; }

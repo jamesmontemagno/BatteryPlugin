@@ -72,7 +72,7 @@ namespace Plugin.Battery
         private Windows.Phone.Devices.Power.Battery DefaultBattery
         {
             get { return battery ?? (battery = Windows.Phone.Devices.Power.Battery.GetDefault()); }
-        } 
+        }
 #endif
         /// <summary>
         /// Gets current level of battery

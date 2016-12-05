@@ -35,15 +35,11 @@
     <DocumentationFile>bin\iPhone\Release\Plugin.Battery.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="..\Battery.Plugin.iOS\BatteryImplementation.cs">
-      <Link>BatteryImplementation.cs</Link>
-    </Compile>
-    <Compile Include="..\Battery.Plugin.iOS\Helpers.cs">
-      <Link>Helpers.cs</Link>
-    </Compile>
     <Compile Include="..\Battery.Plugin\CrossBattery.cs">
       <Link>CrossBattery.cs</Link>
     </Compile>
+    <Compile Include="BatteryImplementation.cs" />
+    <Compile Include="Helpers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
