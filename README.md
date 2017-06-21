@@ -13,14 +13,10 @@ Build Status:
 **Platform Support**
 
 |Platform|Supported|Version|
-| ------------------- | :-----------: | :------------------: |
-|Xamarin.iOS|Yes|iOS 6+|
-|Xamarin.Android|Yes|API 10+|
-|Windows Phone Silverlight|Yes|8.0+|
-|Windows Phone RT|Yes|8.1+|
-|Windows Store RT|Yes|8.1+|
-|Windows 10 UWP|Yes|10+|
-|Xamarin.Mac|No||
+| -------------------  | :------------------: |
+|Xamarin.iOS|iOS 6+|
+|Xamarin.Android|API 10+|
+|Windows 10 UWP|10+|
 
 
 **Windows Store has a blank DLL that always returns 100, Ac, and Full as there is no API for checking battery**
@@ -81,8 +77,6 @@ public enum BatteryStatus
 
 Important:
 * iOS: only returns Charging, Full, Discharging, and Unknown.
-* WP: only returns Charging, Full, Discharging
-* WP 8.1 RT: calculats charge/full and starts with unknown status
 
 
 **PowerSource**
@@ -107,13 +101,6 @@ This occurs when plugged, unplugged, or battery change.
 event BatteryChangedEventHandler BatteryChanged;
 ```
 
-Note: on WP you will only receive this on battery level change.
-
-
-#### Contributions
-Contributions are welcome! If you find a bug please report it and if you want a feature please report it.
-
-If you want to contribute code please file an issue and create a branch off of the current dev branch and file a pull request.
 
 #### License
 Under MIT, see LICENSE file.

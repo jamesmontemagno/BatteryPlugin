@@ -23,60 +23,17 @@
        </dependencies>
    </metadata>
    <files>
-<!--Core-->
-     <file src="src\Battery.Plugin\bin\Release\Plugin.Battery.dll" target="lib\portable-net45+wp80+win8+wpa81\Plugin.Battery.dll" />
-     <file src="src\Battery.Plugin\bin\Release\Plugin.Battery.xml" target="lib\portable-net45+wp80+win8+wpa81\Plugin.Battery.xml" />
-     <file src="src\Battery.Plugin\bin\Release\Plugin.Battery.pdb" target="lib\portable-net45+wp80+win8+wpa81\Plugin.Battery.pdb" />
-     <file src="src\Battery.Plugin.Abstractions\bin\Release\Plugin.Battery.Abstractions.dll" target="lib\portable-net45+wp80+win8+wpa81\Plugin.Battery.Abstractions.dll" />
-     <file src="src\Battery.Plugin.Abstractions\bin\Release\Plugin.Battery.Abstractions.xml" target="lib\portable-net45+wp80+win8+wpa81\Plugin.Battery.Abstractions.xml" />
-     <file src="src\Battery.Plugin.Abstractions\bin\Release\Plugin.Battery.Abstractions.pdb" target="lib\portable-net45+wp80+win8+wpa81\Plugin.Battery.Abstractions.pdb" />
-
-     <!--Win Phone Silverlight-->
-     <file src="src\Battery.Plugin.WindowsPhone8\bin\Release\Plugin.Battery.dll" target="lib\wp8\Plugin.Battery.dll" />
-     <file src="src\Battery.Plugin.WindowsPhone8\bin\Release\Plugin.Battery.xml" target="lib\wp8\Plugin.Battery.xml" />
-     <file src="src\Battery.Plugin.WindowsPhone8\bin\Release\Plugin.Battery.pdb" target="lib\wp8\Plugin.Battery.pdb" />
-     <file src="src\Battery.Plugin.Abstractions\bin\Release\Plugin.Battery.Abstractions.dll" target="lib\wp8\Plugin.Battery.Abstractions.dll" />
-     <file src="src\Battery.Plugin.Abstractions\bin\Release\Plugin.Battery.Abstractions.xml" target="lib\wp8\Plugin.Battery.Abstractions.xml" />
-     <file src="src\Battery.Plugin.Abstractions\bin\Release\Plugin.Battery.Abstractions.pdb" target="lib\wp8\Plugin.Battery.Abstractions.pdb" />
-
-     <!--Win Phone 81-->
-     <file src="src\Battery.Plugin.WindowsPhone81\bin\Release\Plugin.Battery.dll" target="lib\wpa81\Plugin.Battery.dll" />
-     <file src="src\Battery.Plugin.WindowsPhone81\bin\Release\Plugin.Battery.xml" target="lib\wpa81\Plugin.Battery.xml" />
-     <file src="src\Battery.Plugin.WindowsPhone81\bin\Release\Plugin.Battery.pdb" target="lib\wpa81\Plugin.Battery.pdb" />
-     <file src="src\Battery.Plugin.Abstractions\bin\Release\Plugin.Battery.Abstractions.dll" target="lib\wpa81\Plugin.Battery.Abstractions.dll" />
-     <file src="src\Battery.Plugin.Abstractions\bin\Release\Plugin.Battery.Abstractions.xml" target="lib\wpa81\Plugin.Battery.Abstractions.xml" />
-     <file src="src\Battery.Plugin.Abstractions\bin\Release\Plugin.Battery.Abstractions.pdb" target="lib\wpa81\Plugin.Battery.Abstractions.pdb" />
-
-
-     <!--WinStore-->
-     <file src="src\Battery.Plugin.WindowsStore\bin\Release\Plugin.Battery.dll" target="lib\win8\Plugin.Battery.dll" />
-     <file src="src\Battery.Plugin.WindowsStore\bin\Release\Plugin.Battery.xml" target="lib\win8\Plugin.Battery.xml" />
-     <file src="src\Battery.Plugin.WindowsStore\bin\Release\Plugin.Battery.pdb" target="lib\win8\Plugin.Battery.pdb" />
-     <file src="src\Battery.Plugin.Abstractions\bin\Release\Plugin.Battery.Abstractions.dll" target="lib\win8\Plugin.Battery.Abstractions.dll" />
-     <file src="src\Battery.Plugin.Abstractions\bin\Release\Plugin.Battery.Abstractions.xml" target="lib\win8\Plugin.Battery.Abstractions.xml" />
-     <file src="src\Battery.Plugin.Abstractions\bin\Release\Plugin.Battery.Abstractions.pdb" target="lib\win8\Plugin.Battery.Abstractions.pdb" />
+     <!--Core-->
+     <file src="src\Battery.Plugin\bin\Release\netstandard1.0\Plugin.Battery.*" target="lib\netstandard1.0" />
 
      <!--Xamarin.Android-->
-     <file src="src\Battery.Plugin.Android\bin\Release\Plugin.Battery.dll" target="lib\MonoAndroid10\Plugin.Battery.dll" />
-     <file src="src\Battery.Plugin.Android\bin\Release\Plugin.Battery.xml" target="lib\MonoAndroid10\Plugin.Battery.xml" />
-     <file src="src\Battery.Plugin.Android\bin\Release\Plugin.Battery.pdb" target="lib\MonoAndroid10\Plugin.Battery.pdb" />
-     <file src="src\Battery.Plugin.Abstractions\bin\Release\Plugin.Battery.Abstractions.dll" target="lib\MonoAndroid10\Plugin.Battery.Abstractions.dll" />
-     <file src="src\Battery.Plugin.Abstractions\bin\Release\Plugin.Battery.Abstractions.xml" target="lib\MonoAndroid10\Plugin.Battery.Abstractions.xml" />
-     <file src="src\Battery.Plugin.Abstractions\bin\Release\Plugin.Battery.Abstractions.pdb" target="lib\MonoAndroid10\Plugin.Battery.Abstractions.pdb" />
+     <file src="src\Battery.Plugin.Android\bin\Release\Plugin.Battery.*" target="lib\MonoAndroid10" />
 
-     <!--Xamarin.iOS Unified-->
-     <file src="src\Battery.Plugin.iOSUnified\bin\iPhone\Release\Plugin.Battery.dll" target="lib\Xamarin.iOS10\Plugin.Battery.dll" />
-     <file src="src\Battery.Plugin.iOSUnified\bin\iPhone\Release\Plugin.Battery.xml" target="lib\Xamarin.iOS10\Plugin.Battery.xml" />
-     <file src="src\Battery.Plugin.Abstractions\bin\Release\Plugin.Battery.Abstractions.dll" target="lib\Xamarin.iOS10\Plugin.Battery.Abstractions.dll" />
-     <file src="src\Battery.Plugin.Abstractions\bin\Release\Plugin.Battery.Abstractions.xml" target="lib\Xamarin.iOS10\Plugin.Battery.Abstractions.xml" />
+     <!--Xamarin.iOS-->
+     <file src="src\Battery.Plugin.iOS\bin\iPhone\Release\Plugin.Battery.*" target="lib\Xamarin.iOS10" />
 
      <!--UWP-->
-     <file src="src\Battery.Plugin.UWP\bin\Release\Plugin.Battery.dll" target="lib\UAP10\Plugin.Battery.dll" />
-     <file src="src\Battery.Plugin.UWP\bin\Release\Plugin.Battery.xml" target="lib\UAP10\Plugin.Battery.xml" />
-     <file src="src\Battery.Plugin.UWP\bin\Release\Plugin.Battery.pdb" target="lib\UAP10\Plugin.Battery.pdb" />
-     <file src="src\Battery.Plugin.Abstractions\bin\Release\Plugin.Battery.Abstractions.dll" target="lib\UAP10\Plugin.Battery.Abstractions.dll" />
-     <file src="src\Battery.Plugin.Abstractions\bin\Release\Plugin.Battery.Abstractions.xml" target="lib\UAP10\Plugin.Battery.Abstractions.xml" />
-     <file src="src\Battery.Plugin.Abstractions\bin\Release\Plugin.Battery.Abstractions.pdb" target="lib\UAP10\Plugin.Battery.Abstractions.pdb" />
+     <file src="src\Battery.Plugin.UWP\bin\Release\Plugin.Battery.*" target="lib\UAP10" />
 
 
    </files>
