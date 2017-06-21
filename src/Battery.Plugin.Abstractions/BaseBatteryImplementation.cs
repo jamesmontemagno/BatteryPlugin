@@ -41,13 +41,9 @@ namespace Plugin.Battery.Abstractions
         /// When battery level changes
         /// </summary>
         /// <param name="e"></param>
-        protected virtual void OnBatteryChanged(BatteryChangedEventArgs e)
-        {
-            if (BatteryChanged == null)
-                return;
-
-            BatteryChanged(this, e);
-        }
+        protected virtual void OnBatteryChanged(BatteryChangedEventArgs e) =>
+            BatteryChanged?.Invoke(this, e);
+  
 
 
 
@@ -72,6 +68,7 @@ namespace Plugin.Battery.Abstractions
         {
             Dispose(false);
         }
+
         private bool disposed = false;
         /// <summary>
         /// Dispose method

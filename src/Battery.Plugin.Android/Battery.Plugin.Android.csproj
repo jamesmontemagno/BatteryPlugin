@@ -41,8 +41,6 @@
     <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\Battery.Plugin\CrossBattery.cs">
@@ -58,7 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Battery.Plugin.Abstractions\Battery.Plugin.Abstractions.csproj">
-      <Project>{6edb0588-ffc5-4ef5-8a99-9e241d0f878d}</Project>
+      <Project>{272b17eb-14d7-4f28-ba50-1a0fe652799d}</Project>
       <Name>Battery.Plugin.Abstractions</Name>
     </ProjectReference>
   </ItemGroup>

@@ -3,9 +3,9 @@ using System;
 
 namespace Plugin.Battery
 {
-    public static class Helpers
+    static class Helpers
     {
-        public static NSObject Invoker;
+        static NSObject Invoker;
         /// <summary>
         /// Ensures the invoked on main thread.
         /// </summary>

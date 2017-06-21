@@ -8,16 +8,21 @@ namespace Plugin.Battery
     /// </summary>
     public class CrossBattery
     {
-        static Lazy<IBattery> Implementation = new Lazy<IBattery>(() => CreateBattery(), System.Threading.LazyThreadSafetyMode.PublicationOnly);
+        static Lazy<IBattery> implementation = new Lazy<IBattery>(() => CreateBattery(), System.Threading.LazyThreadSafetyMode.PublicationOnly);
 
         /// <summary>
-        /// Current settings to use
+		/// Gets if the plugin is supported on the current platform.
+		/// </summary>
+		public static bool IsSupported => implementation.Value == null ? false : true;
+
+        /// <summary>
+        /// Current plugin implementation to use
         /// </summary>
         public static IBattery Current
         {
             get
             {
-                var ret = Implementation.Value;
+                var ret = implementation.Value;
                 if (ret == null)
                 {
                     throw NotImplementedInReferenceAssembly();
@@ -28,8 +33,8 @@ namespace Plugin.Battery
 
         static IBattery CreateBattery()
         {
-#if PORTABLE
-      return null;
+#if NETSTANDARD1_0
+            return null;
 #else
             return new BatteryImplementation();
 #endif
@@ -47,10 +52,10 @@ namespace Plugin.Battery
         /// </summary>
         public static void Dispose()
         {
-            if (Implementation != null && Implementation.IsValueCreated)
+            if (implementation != null && implementation.IsValueCreated)
             {
-                Implementation.Value.Dispose();
-                Implementation = new Lazy<IBattery>(() => CreateBattery(), System.Threading.LazyThreadSafetyMode.PublicationOnly);
+                implementation.Value.Dispose();
+                implementation = new Lazy<IBattery>(() => CreateBattery(), System.Threading.LazyThreadSafetyMode.PublicationOnly);
             }
         }
     }
