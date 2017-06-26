@@ -114,7 +114,9 @@
     </Compile>
     <Compile Include="BatteryImplementation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Content Include="Properties\Plugin.Battery.rd.xml" />
+    <EmbeddedResource Include="Properties\Plugin.Battery.rd.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Battery.Plugin.Abstractions\Battery.Plugin.Abstractions.csproj">
