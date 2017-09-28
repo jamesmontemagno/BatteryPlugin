@@ -12,7 +12,7 @@ Build Status:
 
 **Platform Support**
 
-|Platform|Supported|Version|
+|Platform|Version|
 | -------------------  | :------------------: |
 |Xamarin.iOS|iOS 6+|
 |Xamarin.Android|API 10+|
