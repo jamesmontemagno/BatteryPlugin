@@ -1,6 +1,6 @@
 ## Battery Status Plugin for Xamarin and Windows
 
-Simple cross platform plugin to check batterystatus of mobile device, get remaining percentage for Xamarin.iOS, Xamarin.Android, Windows, and Xamarin.Forms projects.
+Simple cross platform plugin to check battery status of mobile device, get remaining percentage for Xamarin.iOS, Xamarin.Android, Windows, and Xamarin.Forms projects.
 
 ### Setup
 * Available on NuGet: http://www.nuget.org/packages/Xam.Plugin.Battery  [![NuGet](https://img.shields.io/nuget/v/Xam.Plugin.Battery.svg?label=NuGet)](https://www.nuget.org/packages/Xam.Plugin.Battery/)
@@ -19,7 +19,7 @@ Build Status:
 |Windows 10 UWP|10+|
 
 
-**Windows Store has a blank DLL that always returns 100, Ac, and Full as there is no API for checking battery**
+**Windows Store has a blank DLL that always returns 100, AC, and Full as there is no API for checking battery**
 
 
 ### API Usage
