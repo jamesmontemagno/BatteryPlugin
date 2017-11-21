@@ -17,6 +17,7 @@ Build Status:
 |Xamarin.iOS|iOS 6+|
 |Xamarin.Android|API 10+|
 |Windows 10 UWP|10+|
+|Tizen.NET|4.0+|
 
 
 **Windows Store has a blank DLL that always returns 100, AC, and Full as there is no API for checking battery**

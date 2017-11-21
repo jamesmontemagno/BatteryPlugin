@@ -35,6 +35,8 @@
      <!--UWP-->
      <file src="src\Battery.Plugin.UWP\bin\Release\Plugin.Battery.*" target="lib\UAP10" />
 
+     <!--Tizen-->
+     <file src="src\Battery.Plugin.Tizen\bin\Release\tizen40\Plugin.Battery.*" target="lib\tizen40" />
 
    </files>
 </package>

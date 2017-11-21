@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.13
+VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Battery.Plugin.iOS", "Battery.Plugin.iOS\Battery.Plugin.iOS.csproj", "{2882AEEB-D4CD-4EB9-8A6C-6653B33681F0}"
 EndProject
@@ -23,6 +23,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Battery.Plugin", "Battery.Plugin\Battery.Plugin.csproj", "{9E94B292-7D3B-48C7-817D-251C6FE2DF0A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Battery.Plugin.Abstractions", "Battery.Plugin.Abstractions\Battery.Plugin.Abstractions.csproj", "{272B17EB-14D7-4F28-BA50-1A0FE652799D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Battery.Plugin.Tizen", "Battery.Plugin.Tizen\Battery.Plugin.Tizen.csproj", "{E0CD9671-9237-4513-8709-8256B0F47D5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -104,8 +106,27 @@ Global
 		{272B17EB-14D7-4F28-BA50-1A0FE652799D}.Release|x64.Build.0 = Release|Any CPU
 		{272B17EB-14D7-4F28-BA50-1A0FE652799D}.Release|x86.ActiveCfg = Release|Any CPU
 		{272B17EB-14D7-4F28-BA50-1A0FE652799D}.Release|x86.Build.0 = Release|Any CPU
+		{E0CD9671-9237-4513-8709-8256B0F47D5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0CD9671-9237-4513-8709-8256B0F47D5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0CD9671-9237-4513-8709-8256B0F47D5D}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{E0CD9671-9237-4513-8709-8256B0F47D5D}.Debug|ARM.Build.0 = Debug|Any CPU
+		{E0CD9671-9237-4513-8709-8256B0F47D5D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E0CD9671-9237-4513-8709-8256B0F47D5D}.Debug|x64.Build.0 = Debug|Any CPU
+		{E0CD9671-9237-4513-8709-8256B0F47D5D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E0CD9671-9237-4513-8709-8256B0F47D5D}.Debug|x86.Build.0 = Debug|Any CPU
+		{E0CD9671-9237-4513-8709-8256B0F47D5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0CD9671-9237-4513-8709-8256B0F47D5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0CD9671-9237-4513-8709-8256B0F47D5D}.Release|ARM.ActiveCfg = Release|Any CPU
+		{E0CD9671-9237-4513-8709-8256B0F47D5D}.Release|ARM.Build.0 = Release|Any CPU
+		{E0CD9671-9237-4513-8709-8256B0F47D5D}.Release|x64.ActiveCfg = Release|Any CPU
+		{E0CD9671-9237-4513-8709-8256B0F47D5D}.Release|x64.Build.0 = Release|Any CPU
+		{E0CD9671-9237-4513-8709-8256B0F47D5D}.Release|x86.ActiveCfg = Release|Any CPU
+		{E0CD9671-9237-4513-8709-8256B0F47D5D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {770FC0BC-CD82-480B-AE1F-DEB2E5165460}
 	EndGlobalSection
 EndGlobal
