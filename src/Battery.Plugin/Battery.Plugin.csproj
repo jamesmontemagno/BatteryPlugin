@@ -1,12 +1,43 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.0</TargetFramework>
+    <TargetFrameworks>netstandard1.0;netstandard2.0;MonoAndroid44;Xamarin.iOS10;tizen40;uap10.0.10240</TargetFrameworks>
     <AssemblyName>Plugin.Battery</AssemblyName>
     <RootNamespace>Plugin.Battery</RootNamespace>
+    <Product>$(AssemblyName) ($(TargetFramework))</Product>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AssemblyFileVersion>1.0.0.0</AssemblyFileVersion>
     <Version>1.0.0.0</Version>
+    <Authors>James Montemagno</Authors>
+    <PackageId>Xam.Plugin.Battery</PackageId>
+    <PackOnBuild>true</PackOnBuild>
+    <PackageIconUrl>https://raw.githubusercontent.com/jamesmontemagno/BatteryPlugin/master/art/icon.png</PackageIconUrl>
+    <PackageLicenseUrl>https://github.com/jamesmontemagno/BatteryPlugin/blob/master/LICENSE</PackageLicenseUrl>
+    <Owners>JamesMontemagno</Owners>
+    <PackageProjectUrl>https://github.com/xamarin/XamarinCommunityToolkit</PackageProjectUrl>
+    <Summary>Get battery level, charging status, and events on battery change.</Summary>
+    <PackageTags>xamarin, xamarin.forms, plugin, plugin for xamarin, battery, battery plugin, ios, android, uwp, tizen</PackageTags>
+    <Title>Battery Status Plugin for Xamarin and Windows</Title>
+    <Description>
+      Subscribe to battery change notifications across iOS, Android, and Windows from a single API.
+
+      Ability to gather current battery level, charging status, and charging type.
+    </Description>
+    <Copyright>Copyright 2018</Copyright>
+    <RepositoryUrl>https://github.com/jamesmontemagno/BatteryPlugin</RepositoryUrl>
+    <PackageReleaseNotes>See: https://github.com/jamesmontemagno/BatteryPlugin </PackageReleaseNotes>
+
+    <NeutralLanguage>en</NeutralLanguage>
+    <LangVersion>default</LangVersion>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+
+    
+    <GenerateDocumentationFile Condition=" '$(Configuration)' == 'Release' ">true</GenerateDocumentationFile>
+    <!-- Workaround until Xamarin supports PPDB -->
+    <UseFullSemVerForNuGet>false</UseFullSemVerForNuGet>
+    <DebugType>full</DebugType>
+		
+		<DefineConstants>$(DefineConstants);</DefineConstants>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -14,7 +45,35 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Battery.Plugin.Abstractions\Battery.Plugin.Abstractions.csproj" />
+    <PackageReference Include="MSBuild.Sdk.Extras" Version="1.2.0" PrivateAssets="All" />
+    <Compile Include="Shared\**\*.cs" />
   </ItemGroup>
 
+	<ItemGroup Condition=" '$(TargetFramework)' == 'netstandard1.0' ">
+	</ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'uap10.0.10240' ">
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="5.2.3" />
+    <Compile Include="Platforms\UWP\**\*.cs" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'MonoAndroid44' ">
+    <Compile Include="Platforms\Android\**\*.cs" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'Xamarin.iOS10' ">
+    <Compile Include="Platforms\iOS\**\*.cs" />
+  </ItemGroup>
+
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'Tizen40' ">
+    <Compile Include="Platforms\Tizen\**\*.cs" />
+    <PackageReference Include="Tizen.NET" Version="4.0.0" />
+  </ItemGroup>
+  
+
+	<Import Project="$(MSBuildSDKExtrasTargets)" Condition="Exists('$(MSBuildSDKExtrasTargets)')" />
 </Project>
