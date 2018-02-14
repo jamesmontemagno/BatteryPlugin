@@ -14,7 +14,7 @@
     <PackageIconUrl>https://raw.githubusercontent.com/jamesmontemagno/BatteryPlugin/master/art/icon.png</PackageIconUrl>
     <PackageLicenseUrl>https://github.com/jamesmontemagno/BatteryPlugin/blob/master/LICENSE</PackageLicenseUrl>
     <Owners>JamesMontemagno</Owners>
-    <PackageProjectUrl>https://github.com/xamarin/XamarinCommunityToolkit</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/jamesmontemagno/BatteryPlugin</PackageProjectUrl>
     <Summary>Get battery level, charging status, and events on battery change.</Summary>
     <PackageTags>xamarin, xamarin.forms, plugin, plugin for xamarin, battery, battery plugin, ios, android, uwp, tizen</PackageTags>
     <Title>Battery Status Plugin for Xamarin and Windows</Title>
@@ -40,10 +40,13 @@
 		<DefineConstants>$(DefineConstants);</DefineConstants>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>bin\Release\netstandard1.0\Plugin.Battery.xml</DocumentationFile>
-  </PropertyGroup>
-
+  <ItemGroup>
+    <Folder Include="Shared\" />
+    <Folder Include="Platforms\Android\" />
+    <Folder Include="Platforms\iOS\" />
+    <Folder Include="Platforms\UWP\" />
+  </ItemGroup>
+  
   <ItemGroup>
     <PackageReference Include="MSBuild.Sdk.Extras" Version="1.2.0" PrivateAssets="All" />
     <Compile Include="Shared\**\*.cs" />
