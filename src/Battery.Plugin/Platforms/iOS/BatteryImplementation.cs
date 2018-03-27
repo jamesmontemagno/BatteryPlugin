@@ -41,21 +41,15 @@ namespace Plugin.Battery
         }
 
 
-        /// <summary>
-        /// Gets current level of battery
-        /// </summary>
-        public override int RemainingChargePercent
-        {
-            get
-            {
-                return (int)(UIDevice.CurrentDevice.BatteryLevel * 100F);
-            }
-        }
+		/// <summary>
+		/// Gets current level of battery
+		/// </summary>
+		public override int RemainingChargePercent => (int)(UIDevice.CurrentDevice.BatteryLevel * 100F);
 
-        /// <summary>
-        /// Gets current state of battery
-        /// </summary>
-        public override BatteryStatus Status
+		/// <summary>
+		/// Gets current state of battery
+		/// </summary>
+		public override BatteryStatus Status
         {
             get
             {
