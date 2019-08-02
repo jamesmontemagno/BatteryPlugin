@@ -39,7 +39,7 @@ namespace Plugin.Battery.Abstractions
         /// </summary>
         public bool IsLow { get; set; }
         /// <summary>
-        /// Gets if there is an active internet connection
+        /// Gets the remaining charge percentage of the battery
         /// </summary>
         public int RemainingChargePercent { get; set; }
 
