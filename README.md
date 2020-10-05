@@ -7,7 +7,7 @@ Simple cross platform plugin to check battery status of mobile device, get remai
 * Install into your PCL/NetStanadrd project and Client projects.
 
 Build Status: 
-* ![Build status](https://jamesmontemagno.visualstudio.com/_apis/public/build/definitions/6b79a378-ddd6-4e31-98ac-a12fcd68644c/12/badge)
+* ![Build status](https://jamesmontemagno.visualstudio.com/_apis/public/build/definitions/6b79a378-ddd6-4e31-98ac-a12fcd68644c/12/badge?WT.mc_id=batteryplugin-github-jamont)
 * CI NuGet Feed: http://myget.org/F/xamarin-plugins
 
 ### The Future: [Xamarin.Essentials](https://docs.microsoft.com/xamarin/essentials/index?WT.mc_id=docs-github-jamont)
